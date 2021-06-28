@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::view('login','index');
+
+//Registration View Page
+Route::view('signup','signup');
