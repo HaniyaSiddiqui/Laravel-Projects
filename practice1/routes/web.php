@@ -21,3 +21,5 @@ Route::view('login','index');
 
 //Registration View Page
 Route::view('signup','signup');
+Route::view('home','testing');
+Route::view('signin','signin');

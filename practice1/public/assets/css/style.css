@@ -9,7 +9,8 @@
 }
 
 body{
-    background-color: rgb(rgb(240, 240, 240), green, blue);
+    background-color: rgb(14, 136, 212);
+    /* background-color: rgb(rgb(240, 240, 240), green, blue); */
     font-family: 'Open Sans',sans-serif;
     display:flex;
     align-items:center;
@@ -23,11 +24,26 @@ body{
     border-radius: 5px;
     box-shadow:0 2px 18px rgba(36, 36, 44, 0.4);
     width: 450px;
+    margin:50px;
 }
 
 h2{
+    font-weight: bold ;
     text-align: center;
     margin:20px;
+    margin-left:0px;
+    text-align: left;
+    color:lightseagreen;
+}
+
+p{
+    font-size:10px;
+    bottom: 0px;
+    /* margin-left:10px; */
+}
+
+hr{
+
 }
 .form{
     padding:45px 40px;
