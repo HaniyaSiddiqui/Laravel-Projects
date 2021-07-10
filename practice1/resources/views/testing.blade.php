@@ -5,6 +5,7 @@
        <h2>Sign-Up</h2>
        <p>Please fill up this form to createan account</p>
         <hr/> 
+        <h1>Hi ! {{$name}}</h1>
        <!-- Username  Field-->
        <div class="form-control">
             <label for="username">Username</label>

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Middleware\CustomMiddleware;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +22,14 @@ Route::view('login','index');
 //Registration View Page
 Route::view('signup','signup');
 Route::view('home','testing');
+// Route::get('/{name}', function ($name) {
+//     return view('home',['name'=>$name]);
+// });
+// Route::view('signin','signin')->middleware('limit');
 Route::view('signin','signin');
+Route::view('checkspending','checkspending');
+Route::group([ 'middleware' => 'limit' ],function(){
+    Route::view('signup','signup');
+    Route::view('home','testing');
+ });
+Route::view('pageaccess','pageaccess');
